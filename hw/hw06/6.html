@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Q&A</title>
+        <style>
+            body {
+                color: plum;
+                text-align: center;
+                font-family: 'Jua', sans-serif;
+            }
+
+            h1 {
+                color:plum;
+                text-shadow: 2px 2px 2px rgb(80, 77, 131);
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+
+            #text {
+                width: 300px;
+            }
+
+            #grid {
+                padding-left: 200px;
+            }
+        </style>
+<body>
+    <h1>고객 센터</h1>
+    궁금한 점이 있으시면 무엇이든 물어보세요.
+    답변은 평균 1~2일 소요됩니다.
+    <form>
+        <br/>
+        <div id="grid">
+        <div><select name="categori" size="1">
+            <option value="">유형 선택</option>
+            <option value="delivery">배송 문의</option>
+            <option value="product">제품 문의</option>
+            <option value="etc">기타 문의</option>
+        </select></div>
+        <div id="text"><textarea rows="1" cols="60">제목을 입력하세요.</textarea></div>
+        </div>
+        <br><textarea rows="20" cols="130"> 내용을 입력하세요. </textarea>
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+</body>
+</html>

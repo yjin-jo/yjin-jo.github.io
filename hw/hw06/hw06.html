@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title> JoJo Bakery</title>
+        <style>
+            body {
+                background-image: url('./img/background.jpg');
+                font-family: 'Jua', sans-serif;
+                background-color: #F9E2CF;
+                margin:0px;
+            }
+            #header a:link {
+                font-size: 70px;
+                text-decoration: none;
+                text-shadow: 3px 3px 3px #a34422;
+                color: #EEAB73;
+            }
+
+            #header a:visited {
+                font-size: 70px;
+                text-shadow: 3px 3px 3px #a34422;
+                color: #EEAB73;
+            }
+
+            a:link {
+                text-decoration: none;
+                color: #EEAB73;
+            }
+
+            a:visited {
+                text-decoration: none;
+                color:#EEAB73;
+            }
+
+            h1 {
+                text-align: center;
+                border: 10px dashed #EEAB73;
+                background-color: rgba(235,211,176,0.5);
+                padding: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #grid ol {
+                text-align: center;
+                border: 3px solid #EEAB73;
+                width:125px;
+                margin-left:18px;
+                padding:0px 21px;
+                list-style: none;
+                background-color: rgba(235,211,176,0.5);
+                text-shadow: 2px 2px 2px #c7400f;
+                }
+
+            li {
+                font-size: 30px;
+                margin:5px;
+                padding:0px;
+            }
+
+            #grid {
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+
+            #article {
+                padding-left: 30px;
+            }
+
+            #article iframe{
+                border: 3px solid #EEAB73;
+                background-color: rgba(235,211,176,0.5);
+            }
+
+            @media(max-width:600px){
+                #grid {
+                    display:block;
+                }
+                #grid ol {
+                    border-right: none;
+                }
+                }
+
+            #login {
+                display:grid;
+                grid-template-columns: 170px 1fr;
+                width: 140px;
+                height:115px;
+                padding:0px 10px 45px 15px;
+                margin-left: 20px;
+                border: 3px solid #EEAB73;
+                background-color: rgba(235,211,176,0.5);
+                }
+            
+            #login h3{
+                font-size: 30px;
+                color: #EEAB73;
+                text-shadow: 2px 2px 2px #a34422;
+                margin-top: 11px;
+                margin-bottom: -10px;
+            }
+
+            #home {
+                display: grid;
+                grid-template-columns: 170px 1fr;
+            }
+
+            audio {
+                color: #EEAB73;
+                width: 190px;
+                height:30px;
+                padding-left: 6px;
+            }
+        </style>
+</head>
+<body>
+        <h1 id="header"><a href="">JOJO BAKERY</a></h1>
+        <div id="home">
+            <div id="side">
+                <div id="login">
+                    <form>
+                        <div><h3>Login</h3></div>
+                        <p><input type="text" name="ID" size="15" placeholder="아이디" required></p>
+                        <p><input type="password" name="psw" size="15" placeholder="비밀번호" required></p>
+                        <input type="submit" value="로그인">
+                        <input type="reset" value="다시작성">
+                    </form>
+                </div>
+                <div id="grid">
+                    <ol>
+                        <li><a href="1.html" target="if_a">BREAD</a></li><br/>
+                        <li><a href="2.html" target="if_a">CAKE</a></li><br/>
+                        <li><a href="3.html" target="if_a">DESSERT</a></li><br/>
+                        <li><a href="4.html" target="if_a">COFFEE</a></li><br/>
+                        <li><a href="5.html" target="if_a">DRINKS</li><br/>
+                        <li><a href="6.html" target="if_a">Q&A</a></li><br/>
+                    </ol>
+                </div>
+                <audio src="../hw04/audio/fall_music.mp3" controls></audio>
+            </div>
+            <div id="article">
+                <iframe src="text.html" width="1040" height="1000px" name="if_a" scrolling="no"></iframe>
+            </div>
+        </div>
+</body>
+</html>
